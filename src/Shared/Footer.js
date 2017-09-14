@@ -17,11 +17,21 @@ export const Label = styled.div.attrs({
   className: "gray code f7",
 })``
 
+const StyledLink = styled.a.attrs({
+  className: "link washed-yellow hover-light-yellow",
+})``
+
 export default function Footer() {
   return (
     <Container>
       <InnerContainer>
-        <Label>Source | ToS | CoC</Label>
+        <Label>
+          <StyledLink href="https://github.com/bigorg/website">
+            Source
+          </StyledLink>{" "}
+          | <StyledLink href="/tos">ToS</StyledLink> |{" "}
+          <StyledLink href="/coc">CoC</StyledLink>
+        </Label>
       </InnerContainer>
     </Container>
   )

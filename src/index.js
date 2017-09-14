@@ -12,7 +12,7 @@ import { activities } from "./data"
 class App extends Component {
   render() {
     return (
-      <div className="w-100 h-100 bg-green">
+      <div className="bg-white">
         <Home activities={activities} />
       </div>
     )

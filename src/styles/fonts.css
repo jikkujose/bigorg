@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .roboto-slab {
@@ -10,5 +10,5 @@
 }
 
 .heavy {
-  font-weight: 400;
+  font-weight: 700;
 }

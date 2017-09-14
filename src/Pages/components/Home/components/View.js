@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Card from "./Card"
 import { Header, Footer } from "Shared"
 
+const pad = 40
+
 export const Container = styled.div.attrs({
   className: "h-100",
 })``
@@ -14,9 +16,11 @@ export const Section = styled.div.attrs({
 `
 
 export const InnerContainer = styled.div.attrs({
-  className: "flex flex-wrap pa3 pl0 pt0 justify-between",
+  className: "flex flex-wrap justify-between",
 })`
   max-width: 960px;
+  padding-right: ${pad}px;
+  padding-bottom: ${pad}px;
 `
 
 export function View({ cards }) {

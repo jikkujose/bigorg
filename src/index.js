@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "tachyons"
 
 import "./styles/main.css"
@@ -11,11 +12,7 @@ import { activities } from "./data"
 
 class App extends Component {
   render() {
-    return (
-      <div className="bg-white">
-        <Home activities={activities} />
-      </div>
-    )
+    return <Home activities={activities} />
   }
 }
 

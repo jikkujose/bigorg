@@ -5,9 +5,10 @@
   "dependencies": {
     "react": "15.6.1",
     "react-dom": "15.6.1",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.10",
-    "tachyons": "4.8.1",
-    "styled-components": "2.1.2"
+    "styled-components": "2.1.2",
+    "tachyons": "4.8.1"
   },
   "version": "0.1.0",
   "private": true,

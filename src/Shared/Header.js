@@ -3,16 +3,20 @@ import styled from "styled-components"
 
 import { Logo } from "assets"
 
+const pad = 40
+
 export const Container = styled.div.attrs({
-  className: "flex justify-center w-100 bg-black",
+  className: "flex justify-center w-100 bg-black mt3",
 })`
-  height: 100px;
+  height: 80px;
 `
 
 const InnerContainer = styled.div.attrs({
-  className: "flex items-center flex-auto ph3",
+  className: "flex items-center flex-auto pointer",
 })`
   max-width: 960px;
+  padding-left: ${pad}px;
+  padding-right: ${pad}px;
 `
 
 export const Title = styled.div.attrs({

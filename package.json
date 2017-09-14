@@ -3,7 +3,6 @@
   "description": "",
   "homepage": "https://JikkuJose.github.io/bigorg",
   "dependencies": {
-    "gh-pages": "^1.0.0",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-router-dom": "^4.2.2",
@@ -15,8 +14,8 @@
   "private": true,
   "scripts": {
     "start": "NODE_PATH=src/:src/assets react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "yarn run build",
+    "build": "NODE_PATH=src/:src/assets react-scripts build",
+    "predeploy": "NODE_PATH=src/:src/assets yarn run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

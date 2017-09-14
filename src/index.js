@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "tachyons"
 
 import "./styles/main.css"

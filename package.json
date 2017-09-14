@@ -1,0 +1,20 @@
+{
+  "name": "bigorg-website",
+  "description": "",
+  "homepage": "https://stackblitz.com/edit/bigorg-website",
+  "dependencies": {
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-scripts": "1.0.10",
+    "tachyons": "4.8.1",
+    "styled-components": "2.1.2"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_PATH=src/:src/assets react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

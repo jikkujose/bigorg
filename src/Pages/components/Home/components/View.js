@@ -4,7 +4,9 @@ import styled from "styled-components"
 import Card from "./Card"
 import { Header, Footer } from "Shared"
 
-const pad = 40
+import { pad, cardVisibility } from "config"
+
+console.log(cardVisibility)
 
 export const Container = styled.div.attrs({
   className: "h-100",
@@ -29,7 +31,9 @@ export function View({ cards }) {
       <Header />
       <Section>
         <InnerContainer>
-          {cards.map(card => <Card key={card.id} {...card} />)}
+          {cards.map(card =>
+            <Card key={card.id} {...cardVisibility} {...card} />
+          )}
         </InnerContainer>
       </Section>
       <Footer />

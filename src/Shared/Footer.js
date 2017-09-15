@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-const pad = 40
+import { pad } from "config"
 
 export const Container = styled.div.attrs({
-  className: "flex justify-center w-100 bg-black",
+  className: "flex justify-center w-100 bg-black mb3",
 })`
   height: 50px;
 `

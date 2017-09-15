@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import { Logo } from "assets"
 
-const pad = 40
+import { pad } from "config"
 
 export const Container = styled.div.attrs({
   className: "flex justify-center w-100 bg-black mt3",

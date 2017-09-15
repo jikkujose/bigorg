@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const pad = 40
+import { pad } from "config"
 
 export const Wrapper = styled.div.attrs({
   className: "flex-auto",
@@ -34,10 +34,14 @@ export const SubTitle = styled.div.attrs({
   className: "roboto",
 })``
 
-export default function Card({ title, subTitle, icon, link }) {
-  const showSubTitle = true
-  const showTitle = true
-
+export default function Card({
+  title,
+  subTitle,
+  icon,
+  link,
+  showTitle,
+  showSubTitle,
+}) {
   return (
     <Wrapper>
       <Container>

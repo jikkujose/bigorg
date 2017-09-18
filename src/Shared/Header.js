@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <Container>
       <InnerContainer>
-        <Logo size={50} />
+        <Logo size={50} color="#ffd700" />
         <Title>Blockchain Interest Group</Title>
       </InnerContainer>
     </Container>

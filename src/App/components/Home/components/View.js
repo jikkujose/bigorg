@@ -22,7 +22,6 @@ export const InnerContainer = styled.div.attrs({
 })`
   max-width: 960px;
   padding-right: ${pad}px;
-  padding-bottom: ${pad}px;
 `
 
 export function View({ cards }) {

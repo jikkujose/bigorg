@@ -13,9 +13,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "NODE_PATH=src/:src/assets react-scripts start",
-    "build": "NODE_PATH=src/:src/assets react-scripts build",
-    "predeploy": "NODE_PATH=src/:src/assets yarn run build",
+    "start": "NODE_PATH=src/:src/assets:src/App/components react-scripts start",
+    "build": "NODE_PATH=src/:src/assets:src/App/components react-scripts build",
+    "predeploy": "NODE_PATH=src/:src/assets:src/App/components yarn run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

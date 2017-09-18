@@ -6,7 +6,7 @@ import { pad } from "config"
 export const Container = styled.div.attrs({
   className: "flex justify-center w-100 bg-black mb3",
 })`
-  height: 50px;
+  height: 80px;
 `
 
 const InnerContainer = styled.div.attrs({

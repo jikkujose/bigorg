@@ -1,3 +1,4 @@
-import activities from './activities'
+import activities from "./activities"
+import talks from "./talks"
 
-export { activities }
+export { activities, talks }

@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 
 import { pad } from "config"
@@ -19,7 +20,7 @@ export const Container = styled.div.attrs({
 `
 
 export const Content = styled.div.attrs({
-  className: "link flex flex-column items-center black",
+  className: "flex flex-column items-center black",
 })``
 
 export const Icon = styled.div.attrs({
@@ -44,19 +45,21 @@ export default function Card({
 }) {
   return (
     <Wrapper>
-      <Container>
-        <Content>
-          {icon}
-          {showTitle &&
-            <Title>
-              {title}
-            </Title>}
-          {showSubTitle &&
-            <SubTitle>
-              {subTitle}
-            </SubTitle>}
-        </Content>
-      </Container>
+      <NavLink to={link} className="no-underline">
+        <Container>
+          <Content>
+            {icon}
+            {showTitle &&
+              <Title>
+                {title}
+              </Title>}
+            {showSubTitle &&
+              <SubTitle>
+                {subTitle}
+              </SubTitle>}
+          </Content>
+        </Container>
+      </NavLink>
     </Wrapper>
   )
 }

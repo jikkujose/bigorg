@@ -1,7 +1,7 @@
 {
   "name": "bigorg-website",
   "description": "",
-  "homepage": "https://JikkuJose.github.io/bigorg",
+  "homepage": "https://jikkujose.github.io/bigorg/",
   "dependencies": {
     "react": "15.6.1",
     "react-dom": "15.6.1",

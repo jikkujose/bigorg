@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { NavLink } from "react-router-dom"
 
 import { Logo } from "assets"
 
@@ -12,7 +13,7 @@ export const Container = styled.div.attrs({
 `
 
 const InnerContainer = styled.div.attrs({
-  className: "flex items-center flex-auto pointer",
+  className: "flex flex-auto",
 })`
   max-width: 960px;
   padding-left: ${pad}px;
@@ -27,8 +28,10 @@ export default function Header() {
   return (
     <Container>
       <InnerContainer>
-        <Logo size={50} color="#ffd700" />
-        <Title>Blockchain Interest Group</Title>
+        <NavLink to="/" className="flex items-center">
+          <Logo size={50} color="#ffd700" />
+          <Title>Blockchain Interest Group</Title>
+        </NavLink>
       </InnerContainer>
     </Container>
   )

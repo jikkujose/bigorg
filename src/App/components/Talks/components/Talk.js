@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { NavLink } from "react-router-dom"
 
 import { talkVisibility } from "config"
 
@@ -25,7 +26,7 @@ const Venue = styled.span.attrs({
   className: "black-80",
 })``
 
-const Speaker = styled.span.attrs({
+const Speaker = styled.a.attrs({
   className: "black-80",
 })``
 
@@ -45,7 +46,7 @@ export const Talk = ({ talk }) => {
       </Title>
       <Meta>
         <Venue>{meta.venue}</Venue> on <Date>{meta.date}</Date> by{" "}
-        <Speaker>{meta.speaker.name}</Speaker>
+        <Speaker href={meta.speaker.link}>{meta.speaker.name}</Speaker>
       </Meta>
       {showSubTitle &&
         <SubTitle>

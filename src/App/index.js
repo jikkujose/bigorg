@@ -9,8 +9,10 @@ import { activities, talks } from "data"
 
 export default class App extends Component {
   render() {
+    const basename = process.env.NODE_ENV === "production" ? "bigorg" : ""
+
     return (
-      <Router>
+      <Router basename={basename}>
         <Switch>
           <Route
             exact

@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <Container>
       <InnerContainer>
-        <NavLink to="/" className="flex items-center">
+        <NavLink to="/" className="flex items-center link">
           <Logo size={50} color="#ffd700" />
           <Title>Blockchain Interest Group</Title>
         </NavLink>
